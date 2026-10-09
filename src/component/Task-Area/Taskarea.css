@@ -1,0 +1,43 @@
+.taskside-full { 
+     flex: 1;
+   min-width: 100vh;
+}
+
+.tasksidetop {
+    min-height: 50vh;
+    background-color: rgb(220, 133, 20);
+}
+
+.task-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.task-head button {
+
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-head button:hover {
+    color: aqua;
+    background-color: black;
+
+
+}
+
+.task-count {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.count-card {
+    background-color: aliceblue;
+    border-radius: 5px;
+}
