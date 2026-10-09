@@ -1,6 +1,6 @@
 .taskside-full { 
      flex: 1;
-   min-width: 100vh;
+   min-width: 0;
 }
 
 .tasksidetop {
@@ -38,6 +38,62 @@
 }
 
 .count-card {
+    flex: 1;
     background-color: aliceblue;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.count-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.count-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+.taskside-bottom {
+    padding: 20px;
+    background-color: #113ff6;
+    min-height: 50vh;
+}
+
+.history-head {
+    margin-bottom: 20px;
+}
+
+.task-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-actions button {
+    padding: 8px 14px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-actions button:first-of-type {
+    background-color: #e1edff;
+    color: #2059a8;
+}
+
+.task-actions button:last-of-type {
+    background-color: #ffe5e5;
+    color: #bd3030;
 }
