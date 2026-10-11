@@ -47,17 +47,17 @@ const deleteTask =(id)=>{
 
                     <div className="count-card">
                         <h3>Total Tasks</h3>
-                        <p>10</p>
+                        <p>{tasks.length}</p>
                     </div>
 
                     <div className="count-card">
                         <h3>Pending</h3>
-                        <p>4</p>
+                        <p>{tasks.filter(task => task.status === "Pending").length}</p>
                     </div>
 
                     <div className="count-card">
                         <h3>Completed</h3>
-                        <p>6</p>
+                        <p>{tasks.filter(task => task.status === "Completed").length}</p>
                     </div>
 
                 </div>
@@ -78,9 +78,12 @@ const deleteTask =(id)=>{
 
                             <div className="task-actions">
                                 <span>{task.status}</span>
+
                                 <button>Edit</button>
+
                                 <button onClick={()=>deleteTask(task.id)}>
                                     Delete</button>
+
                             </div>
                         </div>
                     ))}
