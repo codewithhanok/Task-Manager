@@ -12,7 +12,9 @@ const App = () => {
 
         <div className="task">
           <Taskarea/>
+
         </div>
+        
     </div>
     </div>
   )
